@@ -9,15 +9,10 @@ The task is to implement a custom listenable future response struct in Go. These
 
 The interface Response class has methods like addResult, setError, setCompleted, subscribe(...)
 
-Eg:
-(i) Where the caller decides to wait till the whole operation is completed (a blocking wait)
-Response response = someOperation.execute();
-response.waitTillComplete();
-
-(ii) Where the caller decides not to wait, but interested in listening to the events happening within the response (non-blocking)
+The caller decides not to wait, but interested in listening to the events happening within the response.
 Response response = someOperation.execute();
 response.subscribe(functional hook to listen to new results, functional hook to listen for error, functional hook for completion)
-//exit the main thread as subscribing is non-blocking
+//exit the current thread as subscribing is non-blocking.
 
 
 Task 2 (task_queue)
