@@ -1,5 +1,5 @@
 # GoTasks
-A repo of code for random ad-hoc tasks in my effort to practice ,learn the Go programming language. 
+A repo of idiomatic code for random ad-hoc tasks in my effort to practice ,learn and share concepts in Go.
 
 Each task is organized in a separate folder. The tasks I'm trying to code for are explained in as much detail as possible below.
 
